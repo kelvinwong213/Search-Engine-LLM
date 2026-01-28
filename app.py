@@ -43,7 +43,7 @@ if prompt:=st.chat_input(placeholder="What is machine learning?"):
     st.chat_message("user").write(prompt)
 
     # llm=ChatOllama(model="llama3.1")
-    llm=ChatGroq(groq_api_key=api_key,model_name="Llama3-8b-8192",streaming=True)
+    llm=ChatGroq(groq_api_key=api_key,model_name="llama-3.1-8b-instant",streaming=True)
 
     tools=[search,arxiv,wiki]
 
